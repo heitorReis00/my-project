@@ -7,7 +7,7 @@ export default function Conclusao() {
                 <figcaption className="mb-5">
                     <p>A inclusão social não é responsabilidade apenas do governo ou de instituições — é uma construção coletiva, que começa nas atitudes do dia a dia. Cada gesto de respeito, cada espaço adaptado e cada oportunidade oferecida sem distinção nos aproxima de uma sociedade verdadeiramente justa e igualitária.</p>
                 </figcaption>
-                <img src={getImage} alt="conclusao" className="object-cover max-w-[500px]" />
+                <div className="flex justify-center"><img src={getImage} alt="conclusao" className="object-cover  lg:max-w-[500px]" /></div>
             </figure>
         </section>
     )
