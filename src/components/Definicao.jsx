@@ -2,6 +2,7 @@ import TittleTwo from "../tags/TittleTwo"
 import TextDef from "./textDef"
 import { useState } from "react"
 import Buttons from "../tags/Buttons"
+import getImage from "/src/assets/Reuniao.jpg"
 
 export default function Definicao() {
 
@@ -23,7 +24,7 @@ function HandleClickMais() {
                   </p>{mais && <TextDef/>}
          <Buttons><button  className={`px-4 rounded-sm ${mais && "bg-amber-400"}`} onClick={HandleClickMais}>Ler mais...</button></Buttons></figcaption>
         
-         <img src="/src/assets/Reuniao.jpg" alt="" className="object-cover my-5 lg:aspect-[3/5] aspect-[3/4] lg:max-w-[450px]"  />
+         <img src={getImage} alt="ImagemPratica" className="object-cover my-5 lg:aspect-[3/5] aspect-[3/4] lg:max-w-[450px]"  />
       </figure>
         </section>
     )

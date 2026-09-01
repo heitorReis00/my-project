@@ -1,5 +1,5 @@
 import TittleTwo from "../tags/TittleTwo";
-
+import getImage from "/src/assets/DiversasPessoas.avif"
 export default function PraticarInclusao() {
   return (
     <section id="Pratica">
@@ -7,8 +7,8 @@ export default function PraticarInclusao() {
       <div className="lg:flex gap-5 xl:gap-10 items-start my-5">
         <figure className="relative">
           <img
-            src="/src/assets/DiversasPessoas.avif"
-            alt=""
+            src={getImage}
+            alt="diversasPessoas"
             className="object-cover lg:max-w-[450px] aspect-[3/4]"
           />{" "}
           <figcaption className="absolute inset-0 bg-black/20 text-[clamp(0.5rem,5vw,1.5rem)] text-white ">
